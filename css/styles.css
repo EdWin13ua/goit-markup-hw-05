@@ -612,6 +612,7 @@ font-weight: 500;
 
 .btn-closed {
     fill: #2e2f42;
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 24px;
     right: 24px;
@@ -621,7 +622,7 @@ font-weight: 500;
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-closed:hover, .btn-closed:focus {
@@ -667,7 +668,7 @@ font-weight: 500;
 }
 
 .modal-form-input:focus {
-    border: 1px solid #4d5ae5;;
+    border: 1px solid #4d5ae5;
 }
 
 .modal-form-icon {
@@ -676,6 +677,100 @@ font-weight: 500;
     left: 19px;
     stroke: #2e2f42;
     transform: translateY(-50%);
+}
+
+.modal-form-input:focus+.modal-form-icon {
+    fill: #4d5ae5;
+}
+
+.btn-send {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+    background-color: #404bbf;
+}
+
+.modal-container-coment {
+    margin-bottom: 16px;
+}
+
+.modal-coment {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    padding: 8px 16px;
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;
+    resize: none;
+}
+
+.modal-coment::placeholder {
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-coment:focus {
+    border: 1px solid #4d5ae5;
+    outline: transparent;
+}
+
+
+.modal-chekbox {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;
+}
+
+.modal-chekbox-custom {
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    fill: transparent;
+    margin-right: 8px;
+}
+
+.modal-chekbox-ok:checked+.modal-chekbox .modal-chekbox-custom {
+    background-color: #404bbf;
+    border: transparent;
+    fill: #f4f4fd;
+}
+
+.modal-chekbox-link {
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.modal-container-chekbox {
+    margin-bottom: 24px;
 }
 
 /* #endregion Modal */
