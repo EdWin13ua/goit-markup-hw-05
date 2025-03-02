@@ -713,7 +713,7 @@ font-weight: 500;
 }
 
 .modal-container-block {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .modal-form-label {
@@ -852,6 +852,10 @@ font-weight: 500;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
+}
+
+.modal-container-chekbox {
+    margin-bottom: 24px;
 }
 
 /* #endregion Modal */
