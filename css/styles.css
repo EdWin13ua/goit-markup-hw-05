@@ -728,6 +728,7 @@ font-weight: 500;
 
 .modal-form-input-content {
     position: relative;
+    margin-bottom: 8px;
 }
 
 .modal-form-input {
